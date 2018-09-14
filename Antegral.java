@@ -2,8 +2,8 @@
 public class Antegral {
 
     private IFunc mFunc;
-    private boolean debug = true;
-    private double mTol = 0.001;
+    private boolean debug = false;
+    private double mTol = 0.00001;
 
     public Antegral(IFunc func) {
         mFunc = func;
@@ -18,10 +18,19 @@ public class Antegral {
 
         double p = start;
 
-        return 5;
+        double sum = 0;
+        while (p < end) {
+            p += mTol;
+            Log("p",p);
+            sum += mFunc.func(p);
+            Log("sum",sum);
+        }
+        sum *= mTol;
+        return sum;
     }
 
-    private void Log(double val) {
-        System.out.println(val);
+    private void Log(String tag,double val) {
+        if (debug)
+            System.out.println(tag+": "+String.valueOf(val) );
     }
 }

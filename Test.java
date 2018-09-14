@@ -6,11 +6,11 @@ public class Test {
         Antegral antegral = new Antegral(new IFunc() {
             @Override
             public double func(double input) {
-                return input;
+                return 4 * input;
             }
         });
 
-        System.out.println(antegral.calcute(0, 5));
+        System.out.println(antegral.calcute(0, 2));
 
     }
 }
