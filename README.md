@@ -15,7 +15,7 @@ Antegral antegral = new Antegral(new IFunc() {
 
 antegral.calcute(0, 2); // this will return Area
 ~~~
-python
+python3
 ~~~python 
 from Antegral import Calculate
 # put your function here
@@ -39,3 +39,11 @@ console.log(sum);
 ~~~
 # how it works
 sum of millions of Rectangles
+
+# speed test
+function : 2x ,
+start : 0 ,
+end : 2 <br> <b>
+python: 0.162s <br>
+javascript: 0.457s <br>
+java: 0.095s <br> </b>
