@@ -1,0 +1,6 @@
+echo compiling...
+javac Test.java
+echo running...
+java Test
+rm *.class
+echo task complited
