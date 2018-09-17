@@ -6,9 +6,9 @@ public class Test {
         Antegral antegral = new Antegral(new IFunc() {
             @Override
             public double func(double input) {
-                return input * Double.MAX_VALUE;
+                return input * 2;
             }
-        },0.000000001);
+        });
 
         System.out.println(antegral.calcute(0, 2));
 
