@@ -14,7 +14,7 @@ antegral.calcute(0, 2); // this will return Area
 ~~~
 python3
 ~~~python 
-from Antegral 
+import Antegral 
 # put your function here
 def func(input):
     return input*2
