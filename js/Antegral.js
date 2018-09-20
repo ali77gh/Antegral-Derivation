@@ -1,9 +1,9 @@
+var mTol = 0.00001;
 
-
-exports.calcute = function (start, end, func) {
+exports.calcute = function (start,end, func) {
 
     var p = start;
-    var mTol = 0.00001;
+    
 
     var sum = 0;
     while (p < end) {
